@@ -14,16 +14,14 @@
  *= require_self
  */
 
-@import "bootstrap";
-
 $main-color : #EEBE15;
 $main-color-2: #FFCFD8;
 $text-1 : #161515;
 $text-2 : #8D8D8D;
 $background : #FFFFFF;
 
-.button-full {
-  background-color: $main-color !important;
-  border: $main-color 1px !important;
-  color: $text-1;
-}
+$primary: #EEBE15;
+$secondary : #FFCFD8;
+$dark : #161515;
+
+@import "bootstrap";
