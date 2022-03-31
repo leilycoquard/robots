@@ -1,21 +1,26 @@
 <div class="container">
-  <div class="row d-flex">
 
-    <div class="col-md-7 align-self-center">
+  <div class="row d-flex">
+    <div class="col-md-6 offset-md-1 align-self-center">
       <div class="mb-5">
         <h2>Répondez à toutes vos envies,<br>
         Tous vos besoins,</h2>
         <h1>Maintenant et sans limites.</h1>
       </div>
-
-      <button type="button" class="btn btn-primary btn-lg">Best-Seller</button>
-      <button type="button" class="btn btn-primary btn-lg">Parcourez notre catalogue</button>
-
+      <div>
+        <button type="button" class="btn btn-primary btn-lg border border-dark p-3 me-3 mb-3">Best-Seller → </button>
+        <button type="button" class="btn btn-primary btn-lg border border-dark p-3 mb-3">Parcourez notre catalogue →</button>
+      </div>
     </div>
 
     <div class="col-md-5">
       <%= image_tag("landing.png", class: "img-fluid")%>
     </div>
+  </div>
+
+  <div class="row mb-4">
+    <p>Découvrez votre futur compagnon ↓</p>
+  </div>
 
   </div>
 </div>

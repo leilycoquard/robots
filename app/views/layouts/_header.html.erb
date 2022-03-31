@@ -1,14 +1,18 @@
-<div class="container">
+<div class="container bg-light header">
 
-  <div class="d-flex justify-content-between">
+  <div class="row align-items-center py-3 d-flex justify-content-between">
 
     <div class="col-1">
-      <%= image_tag("logo.png", class: "img-fluid")%>
+      <% if logged_in? %>
+        <%= link_to image_tag("logo.png", class: "img-fluid"), "/home"%>
+      <% else %>
+        <%= link_to image_tag("logo.png", class: "img-fluid"), "/welcome"%>
+      <%end%>
     </div>
 
-    <div class="col-4 d-flex justify-content-between">
+    <div class="col-3 d-flex justify-content-between">
       <% if logged_in? %>
-        <p><%= current_user.username %></p>
+        <p><%= current_user.username.upcase %></p>
         <%= button_to "Déconnexion", logout_path, method: "delete" %></li>
       <%end%>
     </div>

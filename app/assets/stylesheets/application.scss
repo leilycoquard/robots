@@ -14,14 +14,22 @@
  *= require_self
  */
 
-$main-color : #EEBE15;
-$main-color-2: #FFCFD8;
-$text-1 : #161515;
-$text-2 : #8D8D8D;
-$background : #FFFFFF;
-
 $primary: #EEBE15;
 $secondary : #FFCFD8;
 $dark : #161515;
+$info : #8D8D8D;
+$light : #FFFFFF;
 
 @import "bootstrap";
+
+.header {
+  position: sticky;
+}
+
+.bottom_footer {
+  min-height: 10em;
+}
+
+.btn {
+  border-radius: 20px;
+}
