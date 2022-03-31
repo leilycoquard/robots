@@ -22,14 +22,27 @@ $light : #FFFFFF;
 
 @import "bootstrap";
 
+.btn {
+  border-radius: 20px;
+}
+
+.card-robot {
+  min-height: 20em;
+  border-radius: 20px;
+  background-color: $secondary;
+  padding:2rem;
+}
+
+.home, .welcome {
+  padding-top: 10vh;
+}
+
 .header {
-  position: sticky;
+  position:fixed;
+  top: 0; left: 0;
+  transform: translate(calc(50vw - 50%));
 }
 
 .bottom_footer {
   min-height: 10em;
-}
-
-.btn {
-  border-radius: 20px;
 }
