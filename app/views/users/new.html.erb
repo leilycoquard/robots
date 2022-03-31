@@ -1,11 +1,11 @@
 <div class="container">
   <h1>Inscription</h1>
 
-  <%= form_for @user do |f|%>
+  <%= form_for @user do |f|%> <%# On intialise @user %>
 
-    <%= f.label :username%><br>
-    <%= f.label :username%><br>
-    <%= f.label :password%><br>
+    <%= f.label :Pseudo%><br>
+    <%= f.text_field :username%><br>
+    <%= f.label :Password%><br>
     <%= f.password_field :password%><br>
     <%= f.submit %>
 

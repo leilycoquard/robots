@@ -2,11 +2,11 @@
   <h1>Bienvenue !</h1>
 
   <% if logged_in? %>
-    <h1>You are Logged In, <%= current_user.username %></h1>
+    <h1>Vous êtes connecté.e au nom <%= current_user.username %>.</h1>
   <%end%>
 
   <div class="d-flex flex-column justify-content-center">
-    <%= button_to "Login", '/login', method: :get%>
-    <%= button_to "Sign Up", '/users/new', method: :get%>
+    <%= button_to "Connexion", '/login', method: :get%>
+    <%= button_to "Inscription", '/users/new', method: :get%>
   </div>
 </div>
