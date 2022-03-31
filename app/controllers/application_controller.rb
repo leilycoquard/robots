@@ -17,7 +17,6 @@ class ApplicationController < ActionController::Base
   # va à welcome si non identifié
   def authorized
     redirect_to '/welcome' unless logged_in?
-    redirect_to '/home' if logged_in?
   end
 
 end

@@ -3,6 +3,7 @@
 
   <% if logged_in? %>
     <h1>Vous êtes connecté.e au nom <%= current_user.username %>.</h1>
+    <%= button_to "Aller directement à la homepage", '/home', method: :get%>
   <%end%>
 
   <div class="d-flex flex-column justify-content-center">
