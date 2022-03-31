@@ -23,13 +23,15 @@
   </div>
 
   <div class="container cards-robot row mb-5"> <!--Affichage cartes-->
-    <div class="card-robot col-12 col-md-3 justify-content-center align-items-center">
-      <%= image_tag(Robot.find(1).image, class: "img-fluid")%>
-      <div class="card-body">
-        <a href="#" class="btn btn-light border border-dark"> <%= Robot.find(1).name%> →</a>
+
+    <%=@robots.to_a.each do |robot| %>
+      <div class="card-robot col-12 col-md-3 justify-content-center align-items-center">
+        <%= image_tag(robot.image, class: "img-fluid")%>
+        <div class="card-body">
+          <a href="#" class="btn btn-light border border-dark"> <%= robot.name%> →</a>
+        </div>
       </div>
-    </div>
-  </div>
+    <%end%>
 
   </div>
 </div>
