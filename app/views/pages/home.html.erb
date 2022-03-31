@@ -24,9 +24,9 @@
 
   <div class="container cards-robot row mb-5"> <!--Affichage cartes-->
     <div class="card-robot col-12 col-md-3 justify-content-center align-items-center">
-      <%= image_tag(Robot.first.image, class: "img-fluid")%>
+      <%= image_tag(Robot.find(1).image, class: "img-fluid")%>
       <div class="card-body">
-        <a href="#" class="btn btn-light border border-dark"> <%= Robot.first.name%> →</a>
+        <a href="#" class="btn btn-light border border-dark"> <%= Robot.find(1).name%> →</a>
       </div>
     </div>
   </div>
