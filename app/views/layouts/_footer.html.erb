@@ -20,9 +20,15 @@
       <p>Contact</p>
       <p>Ils parlent de nous</p>
     </div>
-    <div class="col">
+    <div class="col d-flex flex-column justify-content-between">
       <button type="button" class="btn btn-outline-primary">Télécharger l'application</button>
-      <p>© symBIOS, 2022</p>
+      <div class="div">
+        <%= image_tag("fb.svg", class: "img-fluid", style: "height: 40px")%>
+        <%= image_tag("ytb.svg", class: "img-fluid", style: "height: 40px")%>
+        <%= image_tag("insta.svg", class: "img-fluid", style: "height: 32px")%>
+        <%= image_tag("mail.svg", class: "img-fluid", style: "height: 40px")%>
+      </div>
+      <p>©symBIOS, 2022</p>
     </div>
   </div>
 </div>
