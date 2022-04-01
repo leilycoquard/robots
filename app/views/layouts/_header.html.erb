@@ -1,4 +1,4 @@
-<div class="bg-light container header">
+<div class="bg-light container header hover-none">
 
   <div class="row py-3 d-flex justify-content-between">
 
@@ -10,10 +10,12 @@
       <%end%>
     </div>
 
-    <div class="col-4 col-md-2 d-flex justify-content-between align-items-center">
+    <div class="col-5 col-md-2 d-flex justify-content-end align-items-center">
       <% if logged_in? %>
-        <p class="ignorep"><%= current_user.username.upcase %></p>
+        <p><%= current_user.username.upcase %></p>
         <%= link_to image_tag("logout.svg", class: "img-fluid"), logout_path, method: "delete" %>
+      <% else %>
+        <%= link_to image_tag("logout.svg", class: "img-fluid"), '/login', method: :get %>
       <%end%>
     </div>
 

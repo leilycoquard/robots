@@ -20,7 +20,16 @@ $dark : #161515;
 $info : #8D8D8D;
 $light : #FFFFFF;
 
+@font-face {
+  font-family: 'Inter';
+  src: url('Inter-Regular.ttf');
+}
+
 @import "bootstrap";
+
+body {
+  font-family: 'Inter';
+}
 
 .btn {
   border-radius: 20px;
@@ -29,6 +38,7 @@ $light : #FFFFFF;
 
 .cards-robot {
   padding-bottom: 3em;
+  overflow-x: auto;
 }
 
 .card-robot {
