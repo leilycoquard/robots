@@ -1,18 +1,14 @@
-<div class="container padding">
+<div class="padding">
   <h1>Bienvenue !</h1>
 
   <% if logged_in? %>
-    <h1>Vous êtes connecté.e au nom <%= current_user.username %>.</h1>
-    <%= link_to "Aller directement à la homepage", '/home', method: :get%>
-    <button type="button" class="btn btn-primary btn-lg border border-dark p-3 mt-3 mb-3">Aller directement à la homepage → </button>
-
-    <div class="btn btn-primary btn-lg border border-dark p-3 mt-3 mb-3">
-      <%= link_to "Aller directement à la homepage", '/home', method: :get, :class => "btn" %>
-    </div>
+    <script type="text/javascript">
+      window.location.href="/home"  //redirige si connecté
+    </script>
   <%end%>
 
   <div class="d-flex flex-column justify-content-center">
-    <%= button_to "Connexion", '/login', method: :get%>
-    <%= button_to "Inscription", '/users/new', method: :get%>
+    <%= button_to "Connexion →", '/login', method: :post, class:"btn btn-primary btn-lg border border-dark p-3 me-3 mb-3" %>
+    <%= button_to "Inscription →", '/users/new', method: :get, class:"btn btn-primary btn-lg border border-dark p-3 me-3 mb-3" %>
   </div>
 </div>

@@ -1,6 +1,6 @@
-<div class="container home">
+<div class="padding">
 
-  <div class="row d-flex container">
+  <div class="row d-flex">
     <div class="col-md-6 offset-md-1 align-self-center">
       <div class="mb-5">
         <h2>Répondez à toutes vos envies,<br>
@@ -8,8 +8,8 @@
         <h1>Maintenant et sans limites.</h1>
       </div>
       <div>
-        <button type="button" class="btn btn-primary btn-lg border border-dark p-3 me-3 mb-3">Best-Seller → </button>
-        <button type="button" class="btn btn-primary btn-lg border border-dark p-3 mb-3">Parcourez notre catalogue →</button>
+        <a href="/robots/2" class="btn btn-primary btn-lg border border-dark p-3 me-3 mb-3">Best-Seller →</a>
+        <a href="#catalogue" class="btn btn-primary btn-lg border border-dark p-3 me-3 mb-3">Parcourez notre catalogue →</a>
       </div>
     </div>
 
@@ -18,11 +18,11 @@
     </div>
   </div>
 
-  <div class="row mb-4">
+  <div class="row mb-4" id = "catalogue">
     <p>Découvrez votre futur compagnon et modifiez ses caractéristiques ↓</p>
   </div>
 
-  <div class="row container gap-3 cards-robot d-flex flex-wrap"> <!--Affichage cartes-->
+  <div class="row gap-3 cards-robot d-flex flex-wrap"> <!--Affichage cartes-->
 
     <% @robots.each do |robot|%>
 
