@@ -26,6 +26,10 @@ $light : #FFFFFF;
   border-radius: 20px;
 }
 
+.cards-robot {
+
+}
+
 .card-robot {
   min-height: 20em;
   border-radius: 20px;
@@ -39,6 +43,7 @@ $light : #FFFFFF;
 
 .header {
   position:fixed;
+  width : 100vw !important;
   top: 0; left: 0;
   transform: translate(calc(50vw - 50%));
 }

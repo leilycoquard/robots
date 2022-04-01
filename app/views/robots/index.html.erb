@@ -1,33 +1,35 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+    <p id="notice"><%= notice %></p>
 
-<h1>Robots</h1>
+  <h1>Robots</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Name</th>
-      <th>Intro</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @robots.each do |robot| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= image_tag robot.image %></td>
-        <td><%= robot.name %></td>
-        <td><%= robot.intro %></td>
-        <td><%= robot.description %></td>
-        <td><%= link_to 'Show', robot %></td>
-        <td><%= link_to 'Edit', edit_robot_path(robot) %></td>
-        <td><%= link_to 'Destroy', robot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Intro</th>
+        <th>Description</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @robots.each do |robot| %>
+        <tr>
+          <td><%= image_tag robot.image %></td>
+          <td><%= robot.name %></td>
+          <td><%= robot.intro %></td>
+          <td><%= robot.description %></td>
+          <td><%= link_to 'Show', robot %></td>
+          <td><%= link_to 'Edit', edit_robot_path(robot) %></td>
+          <td><%= link_to 'Destroy', robot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Robot', new_robot_path %>
+  <br>
+
+  <%= link_to 'New Robot', new_robot_path %>
+</div>

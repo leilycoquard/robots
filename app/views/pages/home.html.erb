@@ -22,16 +22,19 @@
     <p>Découvrez votre futur compagnon ↓</p>
   </div>
 
-  <div class="container cards-robot row mb-5"> <!--Affichage cartes-->
+  <div class="container cards-robot d-flex flex-wrap mb-5"> <!--Affichage cartes-->
 
-    <%=@robots.to_a.each do |robot| %>
-      <div class="card-robot col-12 col-md-3 justify-content-center align-items-center">
+    <% @robots.each do |robot|%>
+
+      <div class="card-robot col-12 col-md-3">
         <%= image_tag(robot.image, class: "img-fluid")%>
         <div class="card-body">
-          <a href="#" class="btn btn-light border border-dark"> <%= robot.name%> →</a>
+          <a href="#.<%=robot.id%>" class="btn btn-light border border-dark"> <%= robot.name%> →</a>
         </div>
       </div>
+
     <%end%>
 
   </div>
+
 </div>
