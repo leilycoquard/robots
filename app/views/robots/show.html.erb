@@ -1,24 +1,20 @@
-<p id="notice"><%= notice %></p>
+<div class="container padding">
 
-<p>
-  <strong>Image:</strong>
-  <%= @robot.image %>
-</p>
+  <div class="row">
 
-<p>
-  <strong>Name:</strong>
-  <%= @robot.name %>
-</p>
+    <div class="col-12 col-md-6"></div>
+      <%= image_tag(@robot.image, class: "img-fluid") %>
+    </div>
 
-<p>
-  <strong>Intro:</strong>
-  <%= @robot.intro %>
-</p>
+    <div class="col-12 col-md-6"></div>
+      <h2> <%= @robot.intro %> </h2>
+      <p> <%= @robot.description %> </p>
+    </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @robot.description %>
-</p>
+  </div>
 
-<%= link_to 'Edit', edit_robot_path(@robot) %> |
-<%= link_to 'Back', robots_path %>
+  <div>
+    <%= link_to 'Edit', edit_robot_path(@robot) %> |
+    <%= link_to 'Back', robots_path %>
+  </div>
+</div>

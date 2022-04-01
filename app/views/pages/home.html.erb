@@ -1,4 +1,4 @@
-<div class="container home">
+<div class="container padding">
 
   <div class="row d-flex container">
     <div class="col-md-6 offset-md-1 align-self-center">
@@ -19,7 +19,7 @@
   </div>
 
   <div class="row mb-4">
-    <p>Découvrez votre futur compagnon ↓</p>
+    <p>Découvrez votre futur compagnon et modifiez ses caractéristiques ↓</p>
   </div>
 
   <div class="row container cards-robot d-flex flex-wrap"> <!--Affichage cartes-->
@@ -29,7 +29,7 @@
       <div class="card-robot col-12 col-md-3">
         <%= image_tag(robot.image, class: "img-fluid")%>
         <div class="d-flex justify-content-center">
-          <a href="#/<%=robot.id%>" class="btn btn-light border border-dark"> <%= robot.name%> →</a>
+          <a href="/robots/<%=robot.id%>" class="btn btn-light border border-dark"> <%= robot.name%> →</a>
         </div>
       </div>
 
