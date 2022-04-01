@@ -46,6 +46,11 @@ $light : #FFFFFF;
   min-height: 10em;
 }
 
-.ignorep {
-  margin: 0 auto !important;
+.header {
+  position: sticky;
+  top: 0;
+
+  p {
+    margin: 0 auto !important;
+  }
 }
