@@ -7,8 +7,14 @@
     </script>
   <%end%>
 
-  <div class="d-flex flex-column justify-content-center">
-    <%= button_to "Connexion →", '/login', method: :post, class:"btn btn-primary btn-lg border border-dark p-3 me-3 mb-3" %>
-    <%= button_to "Inscription →", '/users/new', method: :get, class:"btn btn-primary btn-lg border border-dark p-3 me-3 mb-3" %>
+   <div class="row">
+    <div class="col-3 offset-md-2 d-flex justify-content-between align-items-center">
+      <%= button_to "Connexion →", '/login', method: :get, class:"btn btn-primary btn-lg border border-dark p-3 me-3 mb-3" %>
+      <%= button_to "Inscription →", '/users/new', method: :get, class:"btn btn-primary btn-lg border border-dark p-3 me-3 mb-3" %>
+    </div>
+
+    <div class="col-4 offset-md-1 d-flex justify-content-center">
+      <%= image_tag("landing.png", class: "img-fluid")%>
+    </div>
   </div>
 </div>
