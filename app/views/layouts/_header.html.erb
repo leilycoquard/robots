@@ -1,8 +1,8 @@
-<div class="bg-light header container">
+<div class="bg-light ">
 
-  <div class="row align-items-center py-3 d-flex flex-wrap justify-content-between">
+  <div class="row py-3 d-flex justify-content-between header">
 
-    <div class="col-1">
+    <div class="col-3 col-md-1">
       <% if logged_in? %>
         <%= link_to image_tag("logo.png", class: "img-fluid"), "/home"%>
       <% else %>
@@ -10,9 +10,9 @@
       <%end%>
     </div>
 
-    <div class="col-2 d-flex justify-content-between">
+    <div class="col-4 col-md-2 d-flex justify-content-between align-items-center">
       <% if logged_in? %>
-        <p><%= current_user.username.upcase %></p>
+        <p class="ignorep"><%= current_user.username.upcase %></p>
         <%= link_to image_tag("logout.svg", class: "img-fluid"), logout_path, method: "delete" %>
       <%end%>
     </div>

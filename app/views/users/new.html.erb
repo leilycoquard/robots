@@ -7,7 +7,9 @@
     <%= f.text_field :username%><br>
     <%= f.label :Password%><br>
     <%= f.password_field :password%><br>
-    <%= f.submit %>
+    <%= button_tag(type: 'submit', class: "btn btn-primary btn-lg border border-dark p-3 mt-4 me-3 mb-3") do %>
+      Création de compte →
+    <% end %>
 
   <%end%>
 </div>
