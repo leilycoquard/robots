@@ -15,7 +15,7 @@
         <p><%= current_user.username.upcase %></p>
         <%= link_to image_tag("logout.svg", class: "img-fluid"), logout_path, method: "delete" %>
       <% else %>
-        <%= link_to image_tag("logout.svg", class: "img-fluid"), '/login', method: :get %>
+        <%= link_to image_tag("login.svg", class: "img-fluid"), '/login', method: :get %>
       <%end%>
     </div>
 
