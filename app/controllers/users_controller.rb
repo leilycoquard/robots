@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
   # créer user et renvoie à home
   def create
-    @user = User.create(params.require(:user).permit(:username, :password))
+    @user = User.create(params.require(:user).permit(:username, :password, :admin))
     session[:user_id] = @user.id
     redirect_to '/home'
   end
