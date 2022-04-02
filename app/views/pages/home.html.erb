@@ -19,7 +19,7 @@
   </div>
 
   <div class="row my-5" id = "catalogue">
-    <p>Découvrez votre futur compagnon et modifiez ses caractéristiques ↓</p>
+    <p>Découvrez votre futur compagnon ↓</p>
   </div>
 
   <div class="row gap-3 cards-robot d-flex flex-nowrap"> <!--Affichage cartes-->
@@ -35,6 +35,12 @@
 
     <%end%>
 
+  </div>
+
+  <div class="row">
+    <% @users.each do |user| %>
+      <%= link_to user.name, user %>
+    <% end %>
   </div>
 
 </div>

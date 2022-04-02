@@ -3,6 +3,10 @@ class UsersController < ApplicationController
   # permet à l'utilisateur de se connecter
   skip_before_action :authorized, only: [:new, :create]
 
+  def index
+    @users = User.all
+  end
+
   def new
     @user = User.new
   end

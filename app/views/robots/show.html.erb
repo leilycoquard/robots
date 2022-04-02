@@ -1,6 +1,6 @@
 <div class="container padding">
 
-  <div class="row">
+  <div class="row mb-5">
 
     <div class="col-12 col-md-5">
       <%= image_tag(@robot.image, class: "img-fluid") %>
@@ -13,9 +13,15 @@
 
   </div>
 
-  <div class="row">
-    <%= link_to 'Edit', edit_robot_path(@robot) %>
-    <%= link_to 'Retour', '/home' %>
+  <div class="row mb-5">
+
+    <div class="col d-flex justify-content-end">
+    <%if current_user.try(:admin?)%>
+      <%= button_to "Éditer →", edit_robot_path(@robot), method: :get, class:"btn btn-primary btn-lg border border-dark p-3 me-3 mb-3" %>
+    <%end%>
+      <%= button_to "Accueil →", '/home', method: :get, class:"btn btn-primary btn-lg border border-dark p-3 me-3 mb-3" %>
+    </div>
+
   </div>
 
 </div>

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :robots
-  resources :users, only: [:new, :create]
+  resources :users, only: [:index, :new, :create]
 
   root "sessions#welcome"
 
