@@ -19,14 +19,14 @@
   </div>
 
   <div class="row my-5" id = "catalogue">
-    <p>Découvrez votre futur compagnon ↓</p>
+    <p>Découvrez votre futur compagnon et modifiez ses caractéristiques ↓</p>
   </div>
 
   <div class="row gap-3 cards-robot d-flex flex-nowrap"> <!--Affichage cartes-->
 
     <% @robots.each do |robot|%>
 
-      <div class="card-robot col-10 col-md-3">
+      <div class="card-robot col-12 col-md-3">
         <%= image_tag(robot.image, class: "img-fluid")%>
         <div class="d-flex justify-content-center">
           <a href="/robots/<%=robot.id%>" class="btn btn-light border border-dark"> <%= robot.name%> →</a>
